@@ -154,4 +154,4 @@ The evidence does not independently prove full file exfiltration, but it is stro
 
 - [Security Onion Queries](queries.md)
 - [Indicators CSV](indicators.csv)
-- Screenshots: `screenshots/`
+- [Screenshots](screenshots)
