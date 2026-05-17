@@ -1,1 +1,36 @@
-
+indicator,type,description,source,confidence,notes
+10.4.13.101,internal_ip,Suspected infected host,Security Onion Hunt,High,Primary internal host associated with DNS HTTP Suricata and Zeek activity
+10.4.13.1,dns_server,Internal DNS server queried by suspected host,Zeek DNS,Medium,Observed as destination for DNS queries from 10.4.13.101
+66.29.152.174,external_ip,Suspicious HTTP destination,Zeek HTTP and Suricata,High,Destination IP for repeated HTTP traffic to www.cinella.life over TCP 80
+www.cinella.life,domain,Suspicious .life domain,Zeek DNS Zeek HTTP and Suricata,High,Key domain tied to DNS lookup HTTP POST activity and Suricata alerts
+.life,tld,Suspicious top-level domain activity,Suricata,Medium,Triggered Emerging Threats alerts for DNS and HTTP .life activity
+www.smartfavesden.shop,domain,DNS query from suspected host,Zeek DNS,Medium,Observed DNS query from 10.4.13.101
+www.istrakabiinw.info,domain,DNS query from suspected host,Zeek DNS,Medium,Observed DNS query from 10.4.13.101
+www.kanui.com.br,domain,DNS query from suspected host,Zeek DNS,Medium,Observed DNS query from 10.4.13.101
+www.f6731.com,domain,DNS query from suspected host,Zeek DNS,Medium,Observed DNS query from 10.4.13.101
+www.aitutoring.vip,domain,DNS query from suspected host,Zeek DNS,Medium,Observed DNS query from 10.4.13.101
+www.sy-idea.com,domain,DNS query from suspected host,Zeek DNS,Medium,Observed DNS query from 10.4.13.101
+www.x5js8.click,domain,DNS query from suspected host,Zeek DNS,Medium,Observed DNS query from 10.4.13.101
+www.aistero.store,domain,DNS query from suspected host,Zeek DNS,Medium,Observed DNS query from 10.4.13.101
+www.gradlist.ru,domain,DNS query from suspected host,Zeek DNS,Medium,Observed DNS query from 10.4.13.101
+www.optickjawabarat.online,domain,DNS query from suspected host,Zeek DNS,Medium,Observed DNS query from 10.4.13.101
+www.troitt.com,domain,DNS query from suspected host,Zeek DNS,Medium,Observed DNS query from 10.4.13.101
+www.sololevelingshop.co.uk,domain,DNS query from suspected host,Zeek DNS,Medium,Observed DNS query from 10.4.13.101
+www.pechimag-ekb.ru,domain,DNS query from suspected host,Zeek DNS,Medium,Observed DNS query from 10.4.13.101
+www.smarte3info.fr,domain,DNS query from suspected host,Zeek DNS,Medium,Observed DNS query from 10.4.13.101
+www.vianovamobility.shop,domain,DNS query from suspected host,Zeek DNS,Medium,Observed DNS query from 10.4.13.101
+www.brockenbow.com,domain,DNS query from suspected host,Zeek DNS,Medium,Observed DNS query from 10.4.13.101
+www.simonidapure.net,domain,DNS query from suspected host,Zeek DNS,Medium,Observed DNS query from 10.4.13.101
+www.3700421.xyz,domain,DNS query from suspected host,Zeek DNS,Medium,Observed DNS query from 10.4.13.101
+www.pevnenko.tech,domain,DNS query from suspected host,Zeek DNS,Medium,Observed DNS query from 10.4.13.101
+www.helpierus.ru,domain,DNS query from suspected host,Zeek DNS,Medium,Observed DNS query from 10.4.13.101
+www.scbcgm.com,domain,DNS query from suspected host,Zeek DNS,Medium,Observed DNS query from 10.4.13.101
+www.von-tors.ru,domain,DNS query from suspected host,Zeek DNS,Medium,Observed DNS query from 10.4.13.101
+www.trylegbots.com,domain,DNS query from suspected host,Zeek DNS,Medium,Observed DNS query from 10.4.13.101
+www.sqws-adguard.co.in,domain,DNS query from suspected host,Zeek DNS,Medium,Observed DNS query from 10.4.13.101
+www.thesisclaw.xyz,domain,DNS query from suspected host,Zeek DNS,Medium,Observed DNS query from 10.4.13.101
+www.kelimemaster.com.tr,domain,DNS query from suspected host,Zeek DNS,Medium,Observed DNS query from 10.4.13.101
+www.vk-mellstroy.online,domain,DNS query from suspected host,Zeek DNS,Medium,Observed DNS query from 10.4.13.101
+www.tradox.rest,domain,DNS query from suspected host,Zeek DNS,Medium,Observed DNS query from 10.4.13.101
+ET INFO HTTP Request to Suspicious *.life Domain,suricata_rule,Emerging Threats alert for HTTP requests to suspicious .life domains,Suricata,High,Observed 21 alerts
+ET INFO Observed DNS Query to .life TLD,suricata_rule,Emerging Threats alert for DNS query to .life TLD,Suricata,High,Observed 1 alert
