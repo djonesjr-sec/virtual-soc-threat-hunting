@@ -47,7 +47,15 @@ The investigation workflow follows a practical SOC-style process:
 
 ## Portfolio Contents
 
-This repository will include:
+### Completed Investigations
+
+| Investigation | Topic | Summary |
+|---|---|---|
+| [Investigation 001 - XLoader/FormBook Traffic Analysis](investigations/investigation-001-2026-04-13-xloader-formbook/) | XLoader/FormBook post-infection traffic | Security Onion investigation of suspicious DNS, Suricata alerts, Zeek HTTP activity, and repeated outbound HTTP POST behavior from a suspected infected host. |
+
+### Supporting Content
+
+This repository includes:
 
 - Investigation write-ups
 - Sanitized Security Onion screenshots
